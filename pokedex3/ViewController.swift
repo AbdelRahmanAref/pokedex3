@@ -51,7 +51,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             //using parser CSV to pull out the rows
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
-            print(rows)
+            //print(rows)
             //go through each row and get the pokeId and name and then create Pokemon object called poke and then attach that into an array called pokemon
             for row in rows {
                 let pokeId = Int(row["id"]!)!
